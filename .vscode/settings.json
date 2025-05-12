@@ -45,6 +45,8 @@
         "display.h": "c",
         "button.h": "c",
         "stdlib.h": "c",
-        "button_monitor.h": "c"
+        "button_monitor.h": "c",
+        "joystick.h": "c",
+        "pir-sensor.h": "c"
     }
 }

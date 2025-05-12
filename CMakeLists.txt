@@ -45,6 +45,7 @@ add_executable(tcp_start
     src/drivers/tcp.c
     src/drivers/button.c
     src/drivers/pir-sensor.c
+    src/drivers/joystick.c
     ${SSD1306_FILES}
 # ${DRIVERS_FILES} 
 )
@@ -70,6 +71,7 @@ target_include_directories(tcp_start PRIVATE
 # Add any user requested libraries
 target_link_libraries(tcp_start 
     hardware_i2c
+    hardware_adc
     pico_cyw43_arch_none
     pico_cyw43_arch_lwip_threadsafe_background
 )
