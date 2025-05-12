@@ -42,6 +42,9 @@
         "dotenv.h": "c",
         "ws2812b_animation.h": "c",
         "cyw43_arch.h": "c",
-        "display.h": "c"
+        "display.h": "c",
+        "button.h": "c",
+        "stdlib.h": "c",
+        "button_monitor.h": "c"
     }
 }

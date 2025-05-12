@@ -11,8 +11,8 @@
 #include "lwip/netif.h" // Para acessar netif_default e IP
 
 // Configurações de Wi-Fi
-#define WIFI_SSID "Multilaser2"
-#define WIFI_PASSWORD "123456789"
+#define WIFI_SSID "DEUS E FIEL"
+#define WIFI_PASSWORD "89banana"
 
 // Definição dos pinos dos LEDs
 #define LED_PIN CYW43_WL_GPIO_LED_PIN

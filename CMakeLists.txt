@@ -42,6 +42,9 @@ add_executable(tcp_start
     src/main.c
     src/drivers/wifi.c
     src/drivers/display.c
+    src/drivers/tcp.c
+    src/drivers/button.c
+    src/drivers/pir-sensor.c
     ${SSD1306_FILES}
 # ${DRIVERS_FILES} 
 )

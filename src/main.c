@@ -3,21 +3,31 @@
 #include "hardware/i2c.h"
 #include "pico/cyw43_arch.h"
 
+#include "drivers/tcp.h"
 #include "drivers/wifi.h"
+#include "drivers/button.h"
 #include "drivers/display.h"
+#include "drivers/pir-sensor.h"
 
-
-const WifiConnectionConfig wifi_config = {
-    .SSID = "DEUS E FIEL",
-    .password = "89banana"
-};
+#include "config.h"
+#include "button_monitor.h"
 
 
 void setup(){
     stdio_init_all();
+
     init_display();
-    show("HELLO!", true);
+
+    show("SETUP: Iniciando Wifi", true);
     setup_wifi_on_sta_mode(wifi_config);
+    show(get_current_ip(), true);
+
+    setup_tcp(tcp_server_accept_btn_monitor);
+    show("SETUP: TCP ok", true);
+
+    setup_bdl_buttons(ActivateBoth);
+
+    setup_pir_sensor(PIR_SENSOR_GPIO_PIN);
 }
 
 int main()
@@ -25,7 +35,6 @@ int main()
     setup();
     
     while (true) {
-        printf("Hello, world!\n");
-        sleep_ms(1000);
+        process_tcp_events_on_loop();
     }
 }

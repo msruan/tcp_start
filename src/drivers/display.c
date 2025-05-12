@@ -1,5 +1,6 @@
 #include "display.h"
 
+
 ssd1306_t display;
 uint8_t global_display_x = 0;
 uint8_t global_display_y = 0;

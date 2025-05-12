@@ -10,7 +10,7 @@ int connect_wifi(WifiConnectionConfig config);
 
 void setup_wifi_on_sta_mode(const WifiConnectionConfig config)
 {
-    // show("SETUP: Iniciando Wifi", true);
+
     hard_assert(init_wifi_arch() == PICO_OK);
 
     cyw43_arch_enable_sta_mode();
@@ -18,11 +18,8 @@ void setup_wifi_on_sta_mode(const WifiConnectionConfig config)
     cyw43_arch_gpio_put(CYW43_WL_GPIO_LED_PIN, LED_ON);
 
     hard_assert(connect_wifi(config) == PICO_OK);
-    show("OK", true);
 
     printf("SETUP: Conexão WiFi bem sucedida! ");
-    // printf("IP atual é %s", get_current_ip());
-    // show(get_current_ip(), true);
 
     cyw43_arch_gpio_put(CYW43_WL_GPIO_LED_PIN, LED_OFF);
 
