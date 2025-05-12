@@ -1,9 +1,9 @@
 
 # Wireless communication applications for IoT
 
-A simple web server to send data of BitDogLa by HTML⚒️.
+A simple web server to send data of BitDogLa by HTML⚒️
 
-EmbarchaTech work, task of Unit 2
+EmbarchaTech work, task of Unit 2.
 
 
 
