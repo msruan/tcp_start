@@ -6,15 +6,9 @@
 
 #define PIR_SENSOR_GPIO_PIN 8
 
-
-// const WifiConnectionConfig wifi_config = {
-//     .SSID = "DEUS E FIEL",
-//     .password = "89banana"
-// };
-
 const WifiConnectionConfig wifi_config = {
-    .SSID = "ponto2",
-    .password = "ruan1234"
+    .SSID = "thenameofyourwifinetwork",
+    .password = "itspassword"
 };
 
 #endif
