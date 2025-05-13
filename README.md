@@ -20,7 +20,7 @@ EmbarchaTech work, task of Unit 2.
 
 ## Environment Variables
 
-To run this project, you will need to setup the following "environment variables" to ```config.g``` file
+To run this project, you will need to setup the following "environment variables" on ```config.g``` file
 
 `wifi_config`: Struct to set your WiFi network credentials that will be used to serve the app on.
 
